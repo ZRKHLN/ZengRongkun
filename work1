@@ -2,8 +2,8 @@
 #count = 0
 #average = 0
 #input_num = []
-smallest = None
-biggest = None
+min = None
+max = None
 while True:
     num = input("please input number")
     if num =='done':
@@ -12,13 +12,13 @@ while True:
         num = float(num)
     except:
         print("Invalid input")
-    if biggest is None or biggest < num:
-        biggest = num
-    if smallest is None or smallest > num:
-        smallest = num
+    if max is None or max < num:
+        max = num
+    if min is None or min > num:
+        min = num
 #    for i in input_num:
 #       total + = i
 #       count + = 1
 #average = total/count
 #print(total, count, average)
-#print(biggest, smallest)
+print(max, min)
